@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explorar</title> 
+    <link rel="shortcut icon" type="image/jpg" href="Images/music-logo.png"/>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+
+ <!-- ------------------------HEADER NAVIGATION BAR------------------------------------------ -->
+    <div class="progress_bar" id="Bar"></div>
+    <div class="navbar">
+        <a href="#" id="logo"><img class="logo" src="./Images/stage_logo.svg" alt="">Stage</a>
+        <a onclick="open_close_menu()" id="responsive_menu"></a>
+        <div class="nav_content">
+            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Explorar</a></li>
+            <li><a href="../Playlist/index.html">Playlist</a></li>
+            <li><a href="../Perfil/index.html">Perfil</a></li>
+            <li><a href="../Configurações/index.html">Configurações</a></li>
+            <li><a href="../LoginFolder/login/index.html">Login</a></li>
+        </div>
+    </div>
+    
+<main>
+    <aside class="aside section-1">
+        <div class="latest-release">
+            <h1 style="margin-bottom: 12px;">
+                Lançamentos
+            </h1>
+            <div class="latest-release-content">
+                <div class="card" id="track">
+                    <div >
+                        <img src="./img/music-5.jpg">
+                    </div>
+                    <div class="song-description">
+                        <h3> Luau </h3>
+                        <p> LUKiNHAZ </p>
+                    </div>
+                    <div id="actions">
+						<a id="play_pause"><i class='bx bx-play'></i></a>
+					</div>
+                    <audio src="./songs/LUKiNHAZ -Luau.mp3" id="music"></audio>
+                    <p> 2:37 </p>
+                </div>
+                <div class="card" id="track">
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Lewis_Capaldi_-_Before_You_Go.png">
+                    </div>
+                    <div class="song-description">
+                        <h3> Before You </h3>
+                        <p> Lewis Capaldi </p>
+                    </div>
+                    <div id="actions">
+						<a id="play_pause"><i class='bx bx-play'></i></a>
+					</div>
+                    <audio src="./songs/Before You Go.mp3" id="music"></audio>
+                    <p> 4:42 </p>
+                </div>
+                <div class="card" id="track">
+                    <div>
+                        <img src="./Images/musicPics/teto.jpg">
+                    </div>
+                    <div class="song-description">
+                        <h3> Mustang Preto </h3>
+                        <p> Teto </p>
+                    </div>   
+                    <div id="actions">
+						<a id="play_pause"><i class='bx bx-play'></i></a>
+					</div>
+                    <audio src="./songs/mustang.mp3" id="music"></audio>
+                    <p> 3:54 </p>
+                </div>  
+                <div class="card" id="track">
+                    <div>
+                        <img src="./Images/musicPics/mioto.jpg">
+                    </div>
+                    <div class="song-description">
+                        <h3> Com ou sem mim </h3>
+                        <p> Gustavo Mioto </p>
+                    </div>
+                    <div id="actions">
+						<a id="play_pause"><i class='bx bx-play'></i></a>
+					</div>
+                    <audio src="./songs/comousemmim.mp3" id="music"></audio>
+                    <p> 3:54 </p>
+                </div>
+                <div class="card" id="track">
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/81lleqz5QXL._SS500_.jpg">
+                    </div>
+                    <div class="song-description" id="Intentions">
+                        <h3> Intentions </h3>
+                        <p> Justin Bieber </p>
+                    </div>
+                    <div id="actions">
+						<a id="play_pause"><i class='bx bx-play'></i></a>
+					</div>
+                    <audio src="./songs/Intentions.mp3" id="music"></audio>
+                    <p>3:34</p>
+                </div>
+                <div class="card" id="track">
+                    <div>
+                        <img src="./Images/musicPics/MIA.jpg">
+                    </div>
+                    <div class="song-description">
+                        <h3> Mia </h3>
+                        <p> Bad Bunny </p>
+                    </div>
+                    <div id="actions">
+						<a id="play_pause"><i class='bx bx-play'></i></a>
+					</div>
+                    <audio src="./songs/MIA feat Drake.mp3" id="music"></audio>
+                    <p>3:30</p>
+                </div>
+            </div>
+        </div>
+    <!-----------------Popular artists section ---------------------->
+        <div class="popular-artists">
+            <h1 style="margin-bottom: 2.5rem;">
+                Artistas populares
+            </h1>
+            <div class="popular-artist-content">
+                <a href="./perfils/justinBieber/index.html">
+                    <div> 
+                        <img src="img/music-3.jpg">
+                        <div ><i class="fas fa-play"></i></div>
+                        <p> Justin Bieber </p>
+                    </div>
+                </a>
+                <a href="./perfils/brunoMars/index.html">
+                    <div>
+                        <img src="./Images/popular artists/bruno mars.jpg" >
+                        <div><i class="fas fa-play"></i></div>
+                        <p> Bruno Mars </p>
+                    </div>
+                </a>
+                <a href="./perfils/billieEilish/index.html">
+                    <div>
+                        <img src="./Images/popular artists/billie.jpeg">
+                        <div><i class="fas fa-play"></i></div>
+                        <p> Billie Eilish </p>
+                    </div>
+                </a>
+                <a href="./perfils/harryStyles/index.html">
+                    <div>
+                        <img src="./Images/popular artists/harry.jpg">
+                        <div><i class="fas fa-play"></i></div>
+                        <p> Harry Styles </p>
+                    </div>
+                </a>
+                <a href="./perfils/edSheeran/index.html">
+                    <div>
+                        <img src="Images/popular artists/ed sheeran.jpg">
+                        <div><i class="fas fa-play"></i></div>
+                        <p> Ed Sheeran </p>
+                    </div>
+                </a>
+                <a href="./perfils/drake/index.html" >
+                    <div>
+                        <img src="Images/popular artists/drake.jpg">
+                        <div><i class="fas fa-play"></i></div>
+                        <p> Drake </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    <!-- -------------------MUSIC THEMES---------------------------------------- -->
+        <h1 style="margin-bottom: 2.5rem; margin-top: 8%;">
+            Gêneros:
+        </h1>
+        <div class="music-themes-2">
+            <a href="trap/index.html" class="outer-div">
+                <div class="inner-div">
+                    <span>Trap</span>
+                </div>
+            </a>
+            <a href="sertanejo/index.html" class="outer-div">
+                <div class="inner-div">
+                    <span>Sertanejo</span>
+                </div>
+            </a>
+            <a href="funk/index.html" class="outer-div">
+                <div class="inner-div">
+                    <span>Funk</span>
+                </div>
+            </a>
+            <a href="pagode/index.html" class="outer-div">
+                <div class="inner-div">
+                    <span>Pagode</span>
+                </div>
+            </a>
+        </div>
+     <!-- ----------------LATEST INTERNATIONAL SONGS ------------------------------ -->
+
+        <div class="language english">
+            <h1 class="language-heading"> Em alta mundo a fora</h1>
+            <div class="language-content">
+                <div id=track>
+                    <img src="./Images/internacionalMusic/industry.png">
+                    <p> INDUSTRY BABY </p>
+                    <p>  Lil Nas X </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/INDUSTRY BABY.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="./Images/internacionalMusic/lonely.png">
+                    <p> Lonely </p>
+                    <p> Justin Bieber </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/Justin Bieber  benny blanco  Lonely Official Music Video.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="./Images/internacionalMusic/dynamite.jpg">
+                    <p> Dynamite </p>
+                    <p> BTS </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/BTS (방탄소년단) Dynamite Official MV_160k.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="./Images/internacionalMusic/theforeiam.png">
+                    <p> Therefore I am </p>
+                    <p> Billie Eilish </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/Therefore I Am.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="./Images/internacionalMusic/waybigger.png">
+                    <p> Way Bigger </p>
+                    <p> Don Toliver </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/Way Bigger.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="./img/music-3.jpg">
+                    <p> Holy </p>
+                    <p> Justin Bieber </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/Justin Bieber  Holy ft Chance the Rapper Lyric Video.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="./Images/musicPics/MIA.jpg">
+                    <p> MIA </p>
+                    <p> Badbunny </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/MIA feat Drake.mp3" id="music"></audio>
+                </div>
+                <div id=track>
+                    <img src="https://m.media-amazon.com/images/I/81lleqz5QXL._SS500_.jpg">
+                    <p> Intentions </p>
+                    <p> Justin Bieber </p>
+                    <a id="play_pause"><i class='bx bx-play'></i></a>        
+                    <audio src="./songs/Intentions.mp3" id="music"></audio>
+                </div>
+            </div>
+        </div>
+	</aside>
+</main>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
