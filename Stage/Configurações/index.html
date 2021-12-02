@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Configurações</title>
+</head>
+<body>
+    <div class="main">
+        <div class="progress_bar" id="Bar"></div>
+        <div class="navbar">
+            <a href="#" id="logo"><img class="logo" src="./img/stage_logo.svg" alt="">Stage</a>
+            <div class="nav_content">
+                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">Explorar</a></li>
+                <li><a href="../Playlist/index.html">Playlist</a></li>
+                <li><a href="../Perfil/index.html">Perfil</a></li>
+                <li><a href="../Configurações/index.html">Configurações</a></li>
+                <li><a href="../LoginFolder/login/index.html">Login</a></li>
+            </div>
+        </div>
+        
+        <div class="profile-content">
+            <div class="container">
+                <div class="profile-box profile-box-account makeup">
+                    <h2 class="h2-heading mb-4"><i class="fas fa-user mr-3"></i>Editar Perfil</h2>
+                    <div class="row">
+                    </div>
+                    <div class="block_area-content">
+                        <form class="preform" method="post" action="" enctype="multipart/form-data">
+                            <input type="hidden" name="_token" value="huA1cX5670R78qZO2aeuIZWN8K7yQuTMY3Zqbts4">                        
+                            <input type="hidden" name="_method" value="PUT">                        
+                            <div class="show-profile-avatar text-center mb-3">
+                                <div class="profile-avatar d-inline-block">
+                                    <div class="image-upload">
+                                        <input type="file" name="avatar" id="customFileEg1" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
+                                        <label for="customFileEg1">
+                                            <img id="preview-avatar" src="./img/eu.jpg">
+                                        </label>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <label class="prelabel" for="pro5-email">E-mail</label>
+                                        <input type="email" name="email" class="form-control" id="pro5-email" value="henriquessilva463@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <label class="prelabel" for="pro5-name">Seu nome</label>
+                                        <input type="text" class="form-control" id="pro5-name" name="fullname" required="" value="Henrique Sanches Silva">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <label class="prelabel" for="pro5-name">Seu nome de Perfil</label>
+                                        <input type="text" class="form-control" id="pro5-name" name="username" value="hss_463">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div id="show-changepass" class="mt-3 collapse">
+                                        <div class="form-group">
+                                            <label class="prelabel" for="pro5-currentpass">Senha atual</label>
+                                            <input type="password" class="form-control" id="pro5-currentpass" name="current_password" autocomplete="new-password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="prelabel" for="pro5-pass">Nova senha</label>
+                                            <input type="password" class="form-control" id="pro5-pass" name="new_password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="prelabel" for="pro5-confirm">Confirmar nova senha</label>
+                                            <input type="password" class="form-control" id="pro5-confirm" name="confirm_new_password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <div class="mt-4"></div>
+                                        <button type="submit" class="btn btn-block btn-primary">Atualizar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <a id="logo"><img class="logo" src="./img/stage_logo.svg" alt="">Stage</a>
+            <div class="social_handle">
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-twitch'></i>
+                <i class='bx bxl-github' ></i>
+            </div>
+        </div>
+    </div>
+    <script src="./Js/script.js"></script>
+</body>
+</html>

@@ -355,6 +355,7 @@ body{
 	justify-content: space-between;
 	width: 100%;
 	margin-top: 20px;
+	margin-bottom: 3rem;
 	min-height: 230px;
 }
 .comments .comment{
@@ -405,64 +406,7 @@ body{
 	border-radius: 5px;
 }
 
-/*popular_creator*/
-.popular_creator{
-	margin-top: 5rem;
-	margin-left: 5rem;
-	margin-bottom: 5rem;
-	min-height: 100px;
-	width: 85%;
-	z-index: 10;
-	display: flex;
-	flex-direction: column;
-}
-.artists_list{
-	margin-top: 2rem;
 
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 200px;
-	overflow-x: scroll;
-}
-.artist{
-	position: relative;
-	height: 180px;
-	border-radius: 2px;
-	border: 1px solid rgba(255,255,255,0.3);
-}
-.artist:before{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
-	z-index: 10;
-}
-.artist:not(:first-child){
-	margin-left: 10px;
-}
-.artist_desc{
-	width: 100%;
-	position: absolute;
-	bottom: 5px;
-	left: 5px;
-	z-index: 50;
-}
-.artist_desc p:nth-child(1){
-	color: #fff;
-	margin-bottom: 5px;
-}
-.artist_desc p:nth-child(2){
-	color: rgba(255,255,255,0.8);
-	font-size: 0.8em;
-}
-.artist img{
-	width: 10em;
-	height: 100%;
-	object-fit: cover;
-}
 
 /*footer*/
 .footer{
@@ -590,6 +534,3 @@ body{
 		padding-bottom: 25px;
 	}
 }
-
-/*by Dev Ideas*/
-/*finished 🤕*/

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div id="particles-js"></div>
+        <div class="window">
+            <div class="container a-container" id="a-container">
+                <form class="form" id="a-form" method="" action="">
+                    <h2 class="form_title title">Criar conta</h2>
+                    <div class="form__icons"><img class="form__icon"
+                            src="img/face.svg"
+                            alt=""><img class="form__icon"
+                            src="img/Group.svg"><img
+                            class="form__icon"
+                            src="img/twi.svg">
+                    </div><span class="form__span">ou use email para se registrar</span>
+                    <input class="form__input" type="text" placeholder="Nome Completo">
+                    <input class="form__input" type="text" placeholder="Nome de Usuário">
+                    <input class="form__input" type="email" placeholder="Email">
+                    <input class="form__input" type="password" placeholder="Senha">
+                    <button class="form__button button submit">Cadastrar</button>
+                </form>
+            </div>
+            <div class="container b-container" id="b-container">
+                <form class="form" id="b-form" method="" action="">
+                    <h2 class="form_title title">Entre no Stage</h2>
+                    <div class="form__icons"><img class="form__icon"
+                            src="img/face.svg"
+                            alt="" draggable="false">
+                            <img class="form__icon"
+                            src="img/Group.svg" draggable="false"><img
+                            class="form__icon"
+                            src="img/twi.svg" draggable="false">
+                    </div><span class="form__span">ou use a conta de email</span>
+                    <input class="form__input" type="text" placeholder="Nome de Usuário">
+                    <input class="form__input" type="password" placeholder="Senha"><a class="form__link">Esqueceu a
+                        senha?</a>
+                    <button class="form__button button submit">Logar</button>
+                </form>
+            </div>
+            <div class="switch" id="switch-cnt">
+                <div class="switch__circle">
+                    <canvas id="Granim"></canvas>
+                </div>
+                <div class="switch__circle switch__circle--t">
+                    <canvas id="Granim_T"></canvas>
+                </div>
+                <div class="switch__container" id="switch-c1">
+                    <h2 class="switch__title title">Já é cadastrado?</h2>
+                    <p class="switch__description description">Se você ja possui conta, faça o login aqui!</p>
+                    <button class="switch__button button switch-btn">Entrar</button>
+                </div>
+                <div class="switch__container is-hidden" id="switch-c2">
+                    <h2 class="switch__title title">Não tem conta?</h2>
+                    <p class="switch__description description">Se você não possui conta, realize o cadastro!</p>
+                    <button class="switch__button button switch-btn">Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+    <script type="text/javascript" src="js/gra.js"></script>
+    <script src="../particles.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
